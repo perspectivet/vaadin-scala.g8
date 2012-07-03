@@ -20,12 +20,14 @@ This template creates an [SBT](https://github.com/harrah/xsbt/wiki) project that
 
 ### Continuous compilation
 
-One of the nice features of sbt is the continuous compilation feature.  It puts sbt in a mode where it waits for changes to the source tree and selectively recompiles changes.
+One of the nice features of sbt is Continuous Compilation (CC).  CC puts sbt in a mode where it waits for changes to the source tree and selectively recompiles.
 
 For non-web projects:
+
     sbt> ~console
 
 For Vaadin web projects:
+
     sbt> ~;container:reload /
 
 ## Using Vaadin add-ons
