@@ -6,9 +6,9 @@ scalaVersion := "2.9.1"
  
 seq(webSettings: _*)
 
-//seq(gwtSettings: _*)
+seq(gwtSettings: _*)
 
-//gwtVersion := "2.4.0"
+gwtVersion := "2.4.0"
 
 resolvers += "Vaadin add-ons repository" at "http://maven.vaadin.com/vaadin-addons"
 
@@ -27,9 +27,11 @@ libraryDependencies ++= Seq(
 
 
 // hack: sbt-gwt-plugin assumes that sources are in src/main/java
-//javaSource in Compile <<= (scalaSource in Compile)
+javaSource in Compile <<= (scalaSource in Compile)
 
-//gwtModules := List("$package$.$classname$Widgetset")
+gwtModules := List("$package$.$classname$Widgetset")
+
+javaOptions in Gwt += "-mx1024M"
 
 // more correct place would be to compile widgetset under the target dir and configure jetty to find it from there 
-//gwtTemporaryPath := file(".") / "src" / "main" / "webapp" / "VAADIN" / "widgetsets"
+gwtTemporaryPath := file(".") / "src" / "main" / "webapp" / "VAADIN" / "widgetsets"
