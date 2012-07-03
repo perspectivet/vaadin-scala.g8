@@ -4,11 +4,11 @@
 
 First you need install [g8](http://github.com/n8han/giter8). See their page for instructions. Then just drop in to a shell:
 
-	g8 ripla/vaadin-scala
+	g8 perspective/vaadin-scala
 	<answer questions, enter for defaults>
 	cd <project dir>
 	sbt
-	container:start
+	sbt>container:start
 	
 And browse to http://localhost:8080. You can also type *eclipse* in the SBT-prompt to create Eclipse project files and import the project to Eclipse as an existing project.
 
@@ -24,11 +24,11 @@ One of the nice features of sbt is Continuous Compilation (CC).  CC puts sbt in 
 
 For non-web projects:
 
-    sbt> ~console
+    sbt>~console
 
-For Vaadin web projects:
+For Vaadin web projects.  Assuming you've run "container:start" above:
 
-    sbt> ~;container:reload /
+    sbt>~;container:reload /
 
 ## Using Vaadin add-ons
 
