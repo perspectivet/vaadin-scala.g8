@@ -21,7 +21,7 @@ libraryDependencies ++= Seq(
 
 libraryDependencies ++= Seq(
 	//Add add-ons from the directory here. e.g.
-	//"org.vaadin.addons" % "ratingstars" % "1.4"
+	"org.vaadin.addons" % "ratingstars" % "1.4"
 )
 
 

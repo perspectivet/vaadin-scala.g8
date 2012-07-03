@@ -7,7 +7,7 @@ import vaadin.scala._
 import org.vaadin.teemu.ratingstars.RatingStars
 
 
-class $classname$Application Application extends Application {
+class $classname$Application extends Application {
   def init {
     val layout = new VerticalLayout
     setMainWindow(new Window("$name$", content = layout))
