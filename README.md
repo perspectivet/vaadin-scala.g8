@@ -4,7 +4,7 @@
 
 First you need install [g8](http://github.com/n8han/giter8). See their page for instructions. Then just drop in to a shell:
 
-	g8 perspective/vaadin-scala
+	g8 perspectivet/vaadin-scala
 	<answer questions, enter for defaults>
 	cd <project dir>
 	sbt
